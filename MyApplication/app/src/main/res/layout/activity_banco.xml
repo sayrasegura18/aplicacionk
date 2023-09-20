@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="Saldo Actual: $0"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextMonto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Monto"
+            android:layout_below="@+id/textViewSaldo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/buttonRetirar"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextMonto"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:text="Retirar" />
+
+        <Button
+            android:id="@+id/buttonConsignar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consignar"
+            android:layout_below="@+id/editTextMonto"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
